@@ -1,0 +1,17 @@
+﻿<Window x:Class="MyAudioVideoPlayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyAudioVideoPlayer"
+        mc:Ignorable="d"
+        Title="MyAudioVideoPlayer" Height="350" Width="525">
+    <Grid>
+        <MediaElement x:Name="MePlayer" HorizontalAlignment="Left" Height="218" Margin="25,91,0,0" VerticalAlignment="Top" Width="470" LoadedBehavior="Manual"/>
+        <Button x:Name="Browse" Content="Browse" HorizontalAlignment="Left" Margin="401,12,0,0" VerticalAlignment="Top" Width="80" Height="23" Click="Browse_Click"/>
+        <Button x:Name="Play" Content="Play" HorizontalAlignment="Left" Margin="25,45,0,0" VerticalAlignment="Top" Width="75" Click="Play_Click"/>
+        <Button x:Name="Stop" Content="Stop" HorizontalAlignment="Left" Margin="123,45,0,0" VerticalAlignment="Top" Width="75" Click="Stop_Click"/>
+        <TextBox x:Name="Filepath" HorizontalAlignment="Left" Height="23" Margin="25,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="371" TextChanged="TextBox_TextChanged"/>
+
+    </Grid>
+</Window>

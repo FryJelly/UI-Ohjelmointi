@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIohjelmointi", "UIohjelmointi\UIohjelmointi.csproj", "{9EAD6B45-BE87-4D6C-BEB2-5A2A33E07CA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAudioVideoPlayer", "MyAudioVideoPlayer\MyAudioVideoPlayer.csproj", "{3EE125C9-4359-4601-AEDC-CFD22FA3470D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordChecker", "PasswordChecker\PasswordChecker.csproj", "{68CCBF78-668A-40E3-BA57-002BF6876C49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snake", "Snake\Snake.csproj", "{EBB41536-F13B-4EAD-8285-CBE252C15952}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EAD6B45-BE87-4D6C-BEB2-5A2A33E07CA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EAD6B45-BE87-4D6C-BEB2-5A2A33E07CA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EAD6B45-BE87-4D6C-BEB2-5A2A33E07CA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EAD6B45-BE87-4D6C-BEB2-5A2A33E07CA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EE125C9-4359-4601-AEDC-CFD22FA3470D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EE125C9-4359-4601-AEDC-CFD22FA3470D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EE125C9-4359-4601-AEDC-CFD22FA3470D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EE125C9-4359-4601-AEDC-CFD22FA3470D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68CCBF78-668A-40E3-BA57-002BF6876C49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68CCBF78-668A-40E3-BA57-002BF6876C49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68CCBF78-668A-40E3-BA57-002BF6876C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68CCBF78-668A-40E3-BA57-002BF6876C49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBB41536-F13B-4EAD-8285-CBE252C15952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBB41536-F13B-4EAD-8285-CBE252C15952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBB41536-F13B-4EAD-8285-CBE252C15952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBB41536-F13B-4EAD-8285-CBE252C15952}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
