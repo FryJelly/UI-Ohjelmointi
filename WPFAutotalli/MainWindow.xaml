@@ -1,0 +1,21 @@
+﻿<Window x:Class="WPFAutotalli.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFAutotalli"
+        mc:Ignorable="d"
+        Title="Jerryn Autotalli" Height="350" Width="525">
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="btnHaeAutot" Content="Hae autot" Margin="5" Click="btnHaeAutot_Click"/>
+                <Button x:Name="btnHaeAudit" Content="Hae Audit" Margin="5" Click="btnHaeAudit_Click"/>
+                <ComboBox x:Name="cmbMerkit" Margin="5" SelectionChanged="cmbMerkit_SelectionChanged"/>
+            </StackPanel>
+            <DataGrid x:Name="dgAutot" SelectionChanged="dgAutot_SelectionChanged"></DataGrid>
+            <Image x:Name="imgAuto"></Image>
+        </StackPanel>
+
+    </Grid>
+</Window>

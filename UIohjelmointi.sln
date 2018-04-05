@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordChecker", "Password
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snake", "Snake\Snake.csproj", "{EBB41536-F13B-4EAD-8285-CBE252C15952}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFAutotalli", "WPFAutotalli\WPFAutotalli.csproj", "{181C474F-DECD-401C-970B-8A68E47E27DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{EBB41536-F13B-4EAD-8285-CBE252C15952}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBB41536-F13B-4EAD-8285-CBE252C15952}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBB41536-F13B-4EAD-8285-CBE252C15952}.Release|Any CPU.Build.0 = Release|Any CPU
+		{181C474F-DECD-401C-970B-8A68E47E27DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{181C474F-DECD-401C-970B-8A68E47E27DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{181C474F-DECD-401C-970B-8A68E47E27DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{181C474F-DECD-401C-970B-8A68E47E27DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

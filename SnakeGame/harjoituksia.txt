@@ -1,0 +1,9 @@
+Harjoituksia:
+
+1. Tee snake peliin "SuperBonus". Superbonus antaa 10 pistett‰. Laita Superbonukselle eri v‰ri kun tavallisille bonuksille.
+
+2. Tee uusi bonus, "SpeedBonus". Se sykkii ruudulla ja siit‰ saa 50 pistett‰, mutta koko peli nopeutuu.
+
+3. Tee uusi bonus, "EvilBonus". EvilBonus yritt‰‰ menn‰ k‰‰rmett‰ karkuun.
+
+
