@@ -9,6 +9,7 @@
     <Grid>
         <StackPanel>
             <StackPanel Orientation="Horizontal">
+                <Button x:Name="btnHaeAutotMysql" Content="Hae tietokannasta" Click="btnHaeAutotMysql_Click"/>
                 <Button x:Name="btnHaeAutot" Content="Hae autot" Margin="5" Click="btnHaeAutot_Click"/>
                 <Button x:Name="btnHaeAudit" Content="Hae Audit" Margin="5" Click="btnHaeAudit_Click"/>
                 <ComboBox x:Name="cmbMerkit" Margin="5" SelectionChanged="cmbMerkit_SelectionChanged"/>

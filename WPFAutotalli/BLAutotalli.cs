@@ -3,11 +3,37 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data; // sisältää ADOn 
 
 namespace JAMK.IT
 {
     public static class Autotalli
     {
+        public static List<Auto> HaeAutoDB()
+        {
+            try
+            {
+                // haetaan tietokannasta ja muutetaan olioiksi
+                List<Auto> autos = new List<Auto>();
+                DataTable dt = JAMK.IT.DBAutotalli.GetAllAutosFromMysqlDt();
+                // mapataan Datatablen rivit olioitten ominaisuuksiksi
+                foreach (DataRow dr in dt.Rows)
+                {
+                    Auto auto = new Auto();
+                    auto.Merkki = dr[0].ToString();
+                    auto.Malli = dr[1].ToString();
+                    auto.VM = int.Parse(dr[2].ToString());
+                    auto.Hinta = float.Parse(dr[3].ToString());
+                    auto.URL = dr[4].ToString();
+                    autos.Add(auto);
+                }
+                return autos;
+            }
+            catch
+            {
+                throw;
+            }
+        }
         public static List<Auto> Haeautot()
         {
             // GUIn testaamista varten dummy-dataa 

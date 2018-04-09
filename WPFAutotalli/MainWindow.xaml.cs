@@ -27,20 +27,33 @@ namespace WPFAutotalli
         public MainWindow()
         {
             InitializeComponent();
-            //aloituskuva
-            NaytaKuva("autotalli.png");
-            //ladataan kaikki autot muistiin
-            autot = Autotalli.Haeautot();
-            //täytetään ComboBox autojen merkeillä
-            //VE1: manuaalisesti
-            List<string> merkit = new List<string>();
-            merkit.Add("Audi");
-            merkit.Add("Saab");
-            merkit.Add("Volvo");
-            //cmbMerkit.ItemsSource = merkit;
-            //VE2: automaattisesti LINQ:lla datasta
-            var result = autot.Select(m => m.Merkki).Distinct();
-            cmbMerkit.ItemsSource = result;
+            LoadData();
+        }
+        public void LoadData()
+        {
+            try
+            {
+                InitializeComponent();
+                //aloituskuva
+                NaytaKuva("autotalli.png");
+                //ladataan kaikki autot muistiin
+                //autot = Autotalli.Haeautot(); // dummy-dataa testausta varten
+                autot = Autotalli.HaeAutoDB();
+                //täytetään ComboBox autojen merkeillä
+                //VE1: manuaalisesti
+                List<string> merkit = new List<string>();
+                merkit.Add("Audi");
+                merkit.Add("Saab");
+                merkit.Add("Volvo");
+                //cmbMerkit.ItemsSource = merkit;
+                //VE2: automaattisesti LINQ:lla datasta
+                var result = autot.Select(m => m.Merkki).Distinct();
+                cmbMerkit.ItemsSource = result;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         private void NaytaKuva(string url)
         {
@@ -107,6 +120,19 @@ namespace WPFAutotalli
             var result = autot.Where(m => m.Merkki.Contains(merkki)).ToList();
             dgAutot.ItemsSource = result;
             NaytaKuva("autotalli.png");
+        }
+
+        private void btnHaeAutotMysql_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                autot = JAMK.IT.DBAutotalli.GetAllAutosFromMysql();
+                dgAutot.ItemsSource = autot;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
