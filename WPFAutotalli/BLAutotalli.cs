@@ -54,7 +54,6 @@ namespace JAMK.IT
 
             autot.Add(new Auto() { Merkki = "Cadillac", Malli = "DeVille", VM = 1969, KM = 75000, Hinta = 7000, URL = "Cadillac69.png" });
 
-
             //palautus
             return autot;
         }
